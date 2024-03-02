@@ -1,0 +1,68 @@
+{
+  "address": "0xAD5b3a00DBa3Ae4cCfAFC04e65420E1c2d50397b",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "n",
+          "type": "uint256"
+        }
+      ],
+      "name": "getBlockhash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "n",
+          "type": "uint256"
+        }
+      ],
+      "name": "store",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "storeEarliest",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "n",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "header",
+          "type": "bytes"
+        }
+      ],
+      "name": "storeVerifyHeader",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "constructorArgs": [],
+  "linkedLibraries": {},
+  "deployTxnHash": "0xe9cdc7f005572e378f3da17d411d4d8bb64707e98d973aa58ce78020d4d0381a",
+  "sourceName": "src/v0.6/dev/BlockhashStore.sol",
+  "contractName": "BlockhashStore",
+  "deployedOn": "contract.BlockhashStore"
+}
