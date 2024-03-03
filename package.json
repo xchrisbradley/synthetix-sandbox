@@ -1,0 +1,21 @@
+{
+  "name": "synthetix-sandbox",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test:smart-contracts": "forge test",
+    "inspect": "cannon inspect synthetix-sandbox --write-deployments ./deployments",
+    "start": "cannon build omnibus-base-sepolia-andromeda.toml --keep-alive --dry-run --port 8545 --upgrade-from synthetix-omnibus:latest@andromeda --chain-id 84532 --provider-url https://sepolia.base.org | tee ./e2e/cannon-build.log",
+    "deploy": "cannon build omnibus-base-sepolia-andromeda.toml --upgrade-from synthetix-omnibus:latest@andromeda --chain-id 84532 --private-key $TESTNET_PRIVATE_KEY_BASE_SEPOLIA --provider-url $TESTNET_RPC_URL_BASE_SEPOLIA",
+    "deploy:wipe": "cannon build omnibus-base-sepolia-andromeda.toml --chain-id 84532 --private-key $TESTNET_PRIVATE_KEY_BASE_SEPOLIA --provider-url $TESTNET_RPC_URL_BASE_SEPOLIA --wipe"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@usecannon/cli": "^2.11.18",
+    "concurrently": "^8.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

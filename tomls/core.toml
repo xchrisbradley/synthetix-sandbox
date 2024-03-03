@@ -1,0 +1,19 @@
+[setting.snx_package]
+
+[setting.owner]
+
+[setting.target_preset]
+defaultValue = "main"
+
+[setting.salt]
+defaultValue = "snax"
+
+[setting.bundleSalt]
+defaultValue = "snax"
+
+[provision.system]
+source = "<%= settings.snx_package %>"
+targetPreset = "<%= settings.target_preset %>"
+options.owner = "<%= settings.owner %>"
+options.salt = "<%= settings.salt %>"
+options.bundleSalt = "<%= settings.bundleSalt %>"

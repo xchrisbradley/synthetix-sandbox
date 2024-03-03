@@ -3,12 +3,12 @@ version = "3.3.4"
 description = "Synthetix Sample Integration"
 
 [import.synthetixOmnibus]
-source = "synthetix-omnibus:3.3.4"
+source ="synthetix-omnibus:latest"
 
 [contract.sample_integration]
 artifact = "SampleIntegration"
 args = [
     "<%= imports.synthetixOmnibus.contracts.system.CoreProxy %>",
-    "<%= imports.synthetixOmnibus.contracts.system.USDProxy %>",
+    "<%= imports.synthetixOmnibus.contracts.system.USDProxy %>"
 ]
 depends = ["import.synthetixOmnibus"]

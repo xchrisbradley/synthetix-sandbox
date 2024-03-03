@@ -1,0 +1,13 @@
+include = ["./settlement-settings.toml"]
+
+[setting.bigCapSettlementDelay]
+defaultValue = "2"
+
+[setting.bigCapSettlementWindowDuration]
+defaultValue = "60"
+
+[setting.bigCapDefaultStalenessTolerance]
+defaultValue = "3600"
+
+[setting.bigCapStrictStalenessTolerance]
+defaultValue = "60"

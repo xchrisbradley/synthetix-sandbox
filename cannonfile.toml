@@ -1,4 +1,4 @@
-name = "boringjobs-sandbox"
+name = "synthetix-sandbox"
 version = "3.3.4"
 description = "Boring Jobs Sandbox"
 
@@ -273,5 +273,3 @@ func = "createMarket"
 from = "<%= settings.user %>"
 args = ["<%= settings.perpsMarketId %>", "perpTKN", "<%= settings.user %>"]
 depends = ["invoke.allowCreatePerpsAccount"]
-
-# See https://github.com/Synthetixio/synthetix-deployments/tree/main/tomls/markets/perps for examples of how to configure perps
